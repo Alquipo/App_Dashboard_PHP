@@ -1,23 +1,13 @@
 $(document).ready(() => {
 
 	$('#documentacao').on('click', () => {
-        //$('#pagina').load('documentacao.html')
-
-        // $.get('documentacao.html', data =>{
-        //     $('#pagina').html(data)
-        // })
-
+        
         $.post('documentacao.html', data =>{
             $('#pagina').html(data)
         })
     })
     $('#suporte').on('click', () => {
-        //$('#pagina').load('suporte.html')
-
-        // $.get('suporte.html', data =>{
-        //     $('#pagina').html(data)
-        // })
-        
+                
         $.post('suporte.html', data =>{
             $('#pagina').html(data)
         })
@@ -47,7 +37,7 @@ $(document).ready(() => {
                 $('#contatoSugestao').html(dados.contatoSugestao)
                 $('#totalDespesas').html(dados.totalDespesas)
                 
-                console.log(dados)
+                //console.log(dados)
                 
             },
             error:  erro => {console.log(dados)}
