@@ -18,7 +18,7 @@ $(document).ready(() => {
 
     $('#competencia').on('change', e =>{
         let competencia = $(e.target).val()
-        
+                
         //requisição http por ajax
         //metodo, url, dados, sucesso, erro
         $.ajax({
