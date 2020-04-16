@@ -235,16 +235,11 @@
 
     $dasboard->__set('numeroVendas', $bd->getNumeroVendas());
     $dasboard->__set('totalVendas', $bd->getTotalVendas());
-    
-
     $dasboard->__set('clientesAtivos', $bd->getClienteAtivos());
     $dasboard->__set('clientesInativos', $bd->getClienteInativos());
-
-
     $dasboard->__set('contatoReclamacao', $bd->getContatoRelamacao());
     $dasboard->__set('contatoElogio', $bd->getContatoElogios());
     $dasboard->__set('contatoSugestao', $bd->getContatoSugestao());
-
     $dasboard->__set('totalDespesas', $bd->getTotalDespesas());
 
     echo json_encode($dasboard);
